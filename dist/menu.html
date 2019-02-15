@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thalia Brito</title>
+  </head>
+  <body id="menu" style="display: none;">
+    <a href="index.html"><img id="logo" src="assets/logo.svg"></a>
+    <div id="mobile-menu" class="fadeOut">
+        <ul id="mobile-items">
+            <li><span></span><a href="index.html">home</a></li>
+            <li><span></span><a href="about.html">about</a></li>
+            <li><span class="show"></span><a href="menu.html">menu</a></li>
+            <li><span></span><a href="contact-us.html">contact us</a></li>
+        </ul>
+    </div>
+
+    <div class="desktop-navbar">
+        <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="menu.html">menu</a></li>
+            <li><a href="contact-us.html">contact us</a></li>
+        </ul>    
+    </div>
+
+  	<div class="mobile-navbar">
+        <a href="index.html"><img src="assets/logo.svg"></a>
+        <div class="menu-btn" onclick="animateMenuBtn(this)">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div> 
+    </div>
+    <!-- <div id="bg-color">
+    </div> -->
+
+    <div class="header-content-box">
+        <div class="row">
+            <div class="col-xs-12 col-md-5">
+                <h1>Menu</h1>
+            </div>
+            <div class="col-xs-0 col-md-1">
+                <div class="vertical-divider"></div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <p class="content-font">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </div>
+    </div>
+    <h1 class="title">Menu</h1>
+  
+
+    <div class="divider">
+        <div class="line"></div>
+        <span>ramen</span>
+    </div>
+
+    <div class="food-menu-wrapper">
+        <div class="row">
+            <div class="col-xs-12 col-md-6 col-xlg-4">
+                <div class="row menu-item">
+                    <div class="col-xs-6 pic-box">
+                        <div class="menu-pic" style="background:url('assets/menu-item-01.jpg');background-size: contain;background-position: center;"></div>
+                    </div>
+                    <div class="col-xs-6 text-box">
+                        <h2>Spicy Ramen<span></span></h2>
+                        <p>noodles, soy sauce,<br>vegetables, pork</p>
+                        <p class="price"><strong>$8.90</strong></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-md-6 col-xlg-4">
+                <div class="row menu-item">
+                    <div class="col-xs-6 pic-box">
+                        <div class="menu-pic" style="background:url('assets/ramen02.jpeg');background-size: contain;background-position: center;">
+                            
+                        </div>
+                    </div>
+                    <div class="col-xs-6 text-box">
+                        <h2>Seafood Ramen<span></span></h2>
+                        <p>noodles, miso soup,<br>vegetables, seafood</p>
+                        <p class="price"><strong>$8.90</strong></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-md-6 col-xlg-4">
+                <div class="row menu-item">
+                    <div class="col-xs-6 pic-box">
+                        <div class="menu-pic" style="background:url('assets/ramen03.jpg');background-size: cover;background-position: center;background-repeat: no-repeat;">
+                            
+                        </div>
+                    </div>
+                    <div class="col-xs-6 text-box">
+                        <h2>Miso Chicken<span></span></h2>
+                        <p>noodles, miso soup,<br>seaweed, chicken</p>
+                        <p class="price"><strong>$10.90</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--SIDE DISHES-->
+    <div class="divider">
+        <div class="line"></div>
+        <span>side dishes</span>
+    </div>
+
+    <div class="food-menu-wrapper">
+        <div class="row">
+            <div class="col-xs-12 col-md-6 col-xlg-4">
+                <div class="row menu-item" id="side-dishes">
+                <div class="col-xs-6 pic-box">
+                    <div class="menu-pic" style="background:url('assets/rice.jpg');background-size: cover;background-position: center;background-repeat: no-repeat;"></div>
+                </div>
+                <div class="col-xs-6 text-box">
+                    <h2>Rice<span style="width:50px;"></span></h2>
+                    <p>noodles, miso soup,<br>seaweed, chicken</p>
+                    <p class="price"><strong>$2.50</strong></p>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-md-6 col-xlg-4">
+                <div class="row menu-item" id="side-dishes">
+                    <div class="col-xs-6 pic-box">
+                        <div class="menu-pic" style="background:url('assets/edamame.jpeg');background-size: cover;background-position: center;background-repeat: no-repeat;"></div>
+                    </div>
+                    <div class="col-xs-6 text-box">
+                        <h2>Edamame<span style="width:100px;"></span></h2>
+                        <p>salted, steamed</p>
+                        <p class="price"><strong>$4.90</strong></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-md-6 col-xlg-4">
+                <div class="row menu-item" id="side-dishes">
+                    <div class="col-xs-6 pic-box">
+                        <div class="menu-pic" style="background:url('assets/seaweed-salad.jpg');background-size: cover;background-position: center;background-repeat: no-repeat;"></div>
+                    </div>
+                    <div class="col-xs-6 text-box">
+                        <h2>Seaweed Salad<span></span></h2>
+                        <p>noodles, miso soup,<br>seaweed, chicken</p>
+                        <p class="price"><strong>$5.50</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--DESSERTS-->
+    <div class="divider">
+        <div class="line"></div>
+        <span>desserts</span>
+    </div>
+
+    <div class="food-menu-wrapper">
+        <div class="row">
+            <div class="col-xs-12 col-md-6 col-xlg-4">
+                <div class="row menu-item" id="dessert">
+                    <div class="col-xs-6 pic-box">
+                        <div class="menu-pic" style="background:url('assets/greentea-icecream.jpg');background-size: cover;background-position: center;background-repeat: no-repeat;"></div>
+                    </div>
+                    <div class="col-xs-6 text-box">
+                        <h2>Green Tea<br>Ice Cream<span style="width:110px;"></span></h2>
+                        <p>Rich and creamy homemade<br>ice cream with green tea powder</p>
+                        <p class="price"><strong>$2.50</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-xlg-4">
+                <div class="row menu-item" id="dessert">
+                    <div class="col-xs-6 pic-box">
+                        <div class="menu-pic" style="background:url('assets/mochi.jpg');background-size: cover;background-position: center;background-repeat: no-repeat;"></div>
+                    </div>
+                    <div class="col-xs-6 text-box">
+                        <h2>Mochi Ice Cream<span style="width:170px;"></span></h2>
+                        <p>vanilla, green tea,<br>strawberry, rasberry</p>
+                        <p class="price"><strong>$4.90</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="bundle.js"></script>
+</body>
+</html>
